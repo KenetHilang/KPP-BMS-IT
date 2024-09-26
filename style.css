@@ -1,0 +1,110 @@
+:root{
+    --blues: #3C99DC;
+    --yellow: #f9d040;
+    --white: #FFFFFF;
+    --lightblue: #66d3fa;
+    --water: #d5f3fe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--blues);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lightblue);
+    height: 5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    transition: color 0.5s ease;
+    text-align: center;
+}
+
+.not a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1rem;
+    transition: color 0.5s ease;
+    color: var(--blues);
+    background-color: var(--yellow);
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 10rem;
+}
+
+.choosen a {
+    text-decoration: none;
+    padding: 1rem 3rem 1rem 3rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+}
+
+.not a:hover {
+    color: white;
+    font-weight: 500;
+    background-color: var(--lightblue);
+}
+
+.Judul {
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: var(--white);
+}
+
+.ChunkyText {
+    color: var(--white);
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+section {
+    color: var(--white);
+}
+
+.cards-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+}
+
+.cards{
+    background-color: var(--water);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.5s ease;
+    color: var(--blues);
+}
+
+.cards img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+}
