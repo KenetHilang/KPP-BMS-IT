@@ -4,6 +4,7 @@
     --white: #FFFFFF;
     --lightblue: #66d3fa;
     --water: #d5f3fe;
+    --skin: #F8C794;
 }
 
 * {
@@ -91,6 +92,8 @@ section {
     justify-content: center;
     align-items: center;
     grid-template-columns: auto auto auto;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 
 .cards{
@@ -99,7 +102,7 @@ section {
     margin: 1rem;
     padding: 1rem;
     text-align: center;
-    transition: transform 0.5s ease;
+    transition: .5s;
     color: var(--blues);
 }
 
@@ -108,3 +111,44 @@ section {
     height: auto;
     margin-bottom: 1rem;
 }
+
+.cards:hover{
+    transform: translateZ(50px);
+}
+
+.cards:hover + * {
+    transform: translateZ(25px) rotateY(10deg);
+}
+
+.member-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    margin: 0 1rem 0 1rem;
+}
+
+.member{
+    background-color: var(--water);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    transition: .5s;
+    color: var(--blues);
+}
+
+.member img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.member:hover{
+    transform: translateZ(50px);
+    background-color: var(--skin);
+}
+
