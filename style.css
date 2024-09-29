@@ -152,3 +152,25 @@ section {
     background-color: var(--skin);
 }
 
+.gallery img {
+    width: 100%;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+    border-radius: 1rem;
+}
+
+.gallery{
+    columns: 500px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.gallery img:hover{
+    transform: scale(1.04);
+}
+
+.member-grid a{
+    text-decoration: none;
+    color: var(--blues);
+}
